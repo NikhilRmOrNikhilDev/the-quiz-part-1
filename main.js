@@ -12,11 +12,19 @@ function back(){
     document.getElementById("player_name").classList.remove("player_box_active");
     document.getElementById("info_box").classList.add("info_active");
 }
+function hide(){
+    document.getElementById("ok1").innerHTML = "Confirm";
+    document.getElementById("ok2").innerHTML = "Confirm";
+}
 function ok1(){
     document.getElementById("ok1").innerHTML = "✓";
+
+    setTimeout(hide, 2000);
 }
 function ok2(){
     document.getElementById("ok2").innerHTML = "✓";
+
+    setTimeout(hide, 2000);
 }
 function con1(){
     player_1 = document.getElementById("player1").value;
